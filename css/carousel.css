@@ -1,0 +1,490 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  overflow: hidden;
+}
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+	opacity: 0.9;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:19; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.date {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.glyphicon-calendar {
+  padding-right: 10px;
+}
+
+.dashed {
+  font-size: 18px;
+  color: #337AB7;
+  border-bottom: 1px dashed #337AB7;
+}
+
+.dashed:hover {
+  border-bottom: 1px solid #337AB7;
+}
+
+.position {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.img-circle {
+  padding-bottom: 15px;
+}
+
+#faq {
+  padding-left: 20px;
+}
+
+#faq li {
+  margin-left: 20px;
+}
+
+#prezi {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#vk_group {
+  padding-top: 15px;
+}
+
+#vk_arbat {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#vk_maevka {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.lector-pic {
+  width: 30%;
+  float: left;
+}
+
+.lector-info {
+  width: 70%;
+  float: right;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  font-size: 16px;
+}
+
+.navbar-inverse  .navbar-brand {
+  color: #FFFFFF;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 0px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-nav > li > a {
+  padding: 10px;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 10px;
+}
+
+.navbar {
+  min-height: 36px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  max-width: none;
+/*  height: 500px; */
+}
+
+.carousel-caption {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.nowhite {
+  color: #204D74;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* CUSTOMIZE THE Jumbotron
+-------------------------------------------------- */
+
+/* Carousel base class */
+.jumbotron {
+  background-image: url("../img/1.png");
+  height: 400px;
+  margin-bottom: 60px;
+  min-width: 100%;
+}
+
+.jumbotron .container {
+  margin-top: 90px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1182px) {
+  .jumbotron .container {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron .container {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .jumbotron .container {
+    margin-top: 40px;
+  }
+}
+
+/* Since positioning the image, we need to help out the caption */
+.jumbotron-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.jumbotron .item {
+  height: 400px;
+  background-color: #777;
+}
+.jumbotron-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+/*  height: 500px; */
+}
+
+.jumbotron h1{
+  font-size: 52px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .nav-tabs {
+  border-bottom: 0px;
+}
+
+.marketing .col-lg-6 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.marketing .col-lg-6 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.marketing .col-sm-4 {
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.marketing .col-sm-9 {
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+}
+
+.marketing .col-sm-3 {
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+}
+
+.marketing .col-md-2 {
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.marketing .col-md-2-5 {
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.marketing .col-lg-4 {
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.marketing .col-sm-6 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.marketing .col-xs-6 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.marketing .col-md-6 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.marketing .col-md-4 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+  
+.marketing h1 {
+  margin-bottom: 40px;
+}
+
+.marketing .col-md-12 p {
+  font-size: 18px;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.marketing #agenda .tile {
+  padding: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing #agenda .tile p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-tabs > li > a, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: 0px;
+  border-width: 0px;
+}
+
+.tab-pane .featurette-divider {
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.mouse-up {
+  background-color: #F8F8F8;
+}
+
+#logo {
+  padding-top: 20px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+#committee {
+  margin-bottom: 30px;
+}
+
+/* FOOTER CONTENT
+-------------------------------------------------- */
+
+footer p {
+  margin-left: 0px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 0px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+	.jumbotron .container h1 {
+		font-size: 38px;
+	}
+	
+	.jumbotron .container p {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 450px) {
+	.jumbotron .container h1 {
+		font-size: 32px;
+	}
+	
+	.jumbotron .container p {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 450px) {
+	.desktop {
+		display:none;
+	}
+}
+
+@media (min-width: 451px) {
+	.mobile {
+		display:none;
+	}
+}
+
+@media (min-width: 992px) {
+  .col-md-2-5 {
+    float: left;
+  }
+  .col-md-2-5 {
+    width: 20%;
+  }
+}

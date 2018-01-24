@@ -1,0 +1,45 @@
+.big-button {
+	height: 180px;
+	opacity: 0.6;
+}
+
+.big-button:hover {
+	opacity: 1;
+}
+
+.atcb-list {
+	border: 1px solid rgb(186,186,186);
+	border-radius: 2px;
+	box-shadow: 0 0 5px #AAA;
+}
+
+.atcb-item-link {
+	color: #000;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+
+#dialog-btn {
+	background-image: url(img/dialog.jpg);
+	background-repeat: no-repeat;
+    background-position: 50% 50%; 
+}
+
+#interweek-btn {
+	background-image: url(img/interweek.jpg);
+	background-repeat: no-repeat;
+    background-position: 50% 50%; 
+}
+
+a > .img-circle {
+	height: 140px;
+}
+
+.img-partner {
+	height: 180px;
+}
+
+.img-partner-mid {
+	height: 140px;
+	padding-top: 20px;
+}
